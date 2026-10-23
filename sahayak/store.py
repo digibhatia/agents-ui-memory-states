@@ -160,5 +160,3 @@ class RedisStore:
  
 def get_store(backend: str, sqlite_path: str, redis_url: str):
     return RedisStore(redis_url) if backend == "redis" else SQLiteStore(sqlite_path)
-
-has context menu
